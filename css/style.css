@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: arial; 
+}
+
+.container {
+    width: 100vw; 
+    height: 100vh; 
+
+    background: #083546;
+    /*
+    background: maneira abreviada para declarra tods as propiedades
+    background-color: define a cor do fundo
+    */
+    
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.timer {
+    min-width: 40%; 
+    margin-bottom: 2rem; 
+    padding: 2rem; 
+    text-align: center; 
+    background: #EEE; 
+    border-radius: 1rem; 
+}
+
+.timer h1 { /*Timer h1 para selecionar a classe "timer" e a tag "h1"*/
+    font-size: 3rem; 
+    margin: 1rem 0; /*Margin adicionada em cima e em baixo*/
+}
+
+.timer button {
+    width: 4.5rem; 
+    height: 2.5rem; 
+    margin: 1rem .5rem; 
+    cursor: pointer; /*adicionar a aniamacao de clicar ao cursor do mouse*/
+    border: 0; 
+    border-radius: .5rem; 
+    color: #EEE; 
+    font-size: 1rem; 
+    font-weight: bold; /*Font-weight define o peso(ou negrito) da fonte. Os pesos disponiveis dependem do que esta definido no momento*/
+}
+
+.timer #start { /*"#" sao formas para identificar um elemento, e devem ser unicas para cada elemento*/
+    background: #58bc5d; 
+}
+
+.timer #pause {
+    background: #777; 
+}
+
+.timer #stop {
+    background: #ba3535; 
+}
+
+span{ 
+    text-align: center; 
+    color: #EEE; 
+}
+
+a {
+    color: #AAA; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; /*Text-decoration eh uma propiedade decorativa para por linhas no texto*/
+}
